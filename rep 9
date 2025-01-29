@@ -1,0 +1,34 @@
+class createPersonage:
+    def init(self, name_pers, class_pers, hp_pers, damage_pers):
+    self.name_pers = name_pers
+    self.class_pers = class_pers
+    self.hp_pers = hp_pers
+    self.damage_pers = damage_pers
+
+def print_into(self)
+    print(f"Имя: {self.name_pers}\nКласс:{self.class_pers}\nЖизни:{self.hp_pers}\nУрон:{self.damage_pers}\n")
+
+def go_on_a_trip(self):
+    print(f"Персонаж {self.name_pers} отправился в путешествие и пока недоступен.")
+
+def go_back(self):
+    print(f"Персонаж {self.name_pers} возвращается назад.")
+
+def start_training(self):
+    self.hp_pers += 3
+    self.damage_pers += 5
+    print(f"Персонаж {self.name_pers} начал тренировку. Некоторое время он не будет доступен, однако станет сильнее!\n")
+
+def start_the_battle(self):
+    print(f"Персонаж {self.name_pers} хочет сражаться!\n Его показатели: Жизни: {self.hp_pers}, Урон: {self.damage_pers}\n")
+
+# Создание объекта персонажа
+pers_1 = CreatePersonage("Игорь", "Боец", 99, 15)
+
+# Тестирование методов
+pers_1.print_info()
+pers_1.go_on_a_trip()
+pers_1.go_back()
+pers_1.start_training()
+pers_1.print_info()
+pers_1.start_the_battle()
